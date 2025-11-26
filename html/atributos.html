@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Atributos HTML</title>
+
+  <style>
+    .tabla {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .tabla td {
+      border: 1px solid black;
+      padding: 10px;
+    }
+
+    .col-80 {
+      width: 80%;
+    }
+
+    .col-20 {
+      width: 20%;
+    }
+
+    /* Header */
+    .col-10 {
+      width: 10%;
+    }
+
+    .col-11 {
+      width: 11%;
+    }
+  </style>
+
+</head>
+
+<body>
+  <hr>
+  <header>
+    <table>
+      <tr>
+
+        <td class="col-10">
+          <a href="../index.html"><img src="../images/atributos-de-HTML.jpg" alt="logo" width="50px"></a>
+        </td>
+
+        <td style="text-align: left;">
+          <a href="../index.html">Inicio</a> &emsp;&emsp;
+          <a href="/Html/etiquetas.html">Etiquetas</a>&emsp;&emsp;
+          <a href="/Html/atributos.html">Atributos</a>&emsp;&emsp;
+          <a href="/Html/css.html">CSS</a> &emsp;&emsp;
+          <a href="/Html/javascript.html">JavaScript</a>
+        </td>
+
+        <td class="col-11" style="text-align: right;">
+          <a href="/Html/contacto.html">Contacto</a>&emsp; &emsp;
+          <a href="/Html/acercade.html">Acerca de</a>
+        </td>
+
+      </tr>
+    </table>
+  </header>
+  <hr>
+
+  <main>
+    <section>
+      <h1>Atributos HTML</h1>
+
+      <article>
+        <h2>Contenido</h2>
+
+        <ol>
+          <li>
+            <a href="#atributos_globales">Atributos globales</a>
+            <ul>
+              <li><a href="#1.1">1.1</a></li>
+              <li><a href="#1.2">1.2</a></li>
+              <li><a href="#1.3">1.3</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#atributos_form">Atributos form</a>
+            <ul>
+              <li><a href="#2.1">2.1</a></li>
+              <li><a href="#2.2">2.2</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#3">Atributos input</a>
+          </li>
+        </ol>
+      </article>
+
+      <br><br>
+
+      <article>
+        <table class="tabla">
+
+          <tr>
+            <td class="col-80">
+              <h2 id="atributos_globales">Atributos globales</h2>
+
+              <p>
+                Los atributos globales son aquellos que pueden ser utilizados en cualquier elemento HTML,
+                a excepción de las etiquetas que no están incluidas en el cuerpo del documento
+                (como &lt;html&gt;, &lt;head&gt;, &lt;title&gt;). Proporcionan información básica o
+                comportamiento estándar.
+              </p>
+
+              <h3 id="1.1">1.1</h3>
+              <p>
+                <b>id (Identificador Único):</b><br>
+                Asigna un identificador único al elemento. <br>
+                Regla: Solo debe haber un elemento con un id específico por página. <br>
+                Uso: Se utiliza para apuntar a elementos desde CSS (#) o JavaScript.
+              </p>
+
+              <p>
+                <b>class (Clases de Estilo):</b><br>
+                Asigna uno o más nombres de clase al elemento. <br>
+                Regla: Puede haber múltiples elementos con la misma clase. <br>
+                Uso: Selecciona grupos desde CSS (.) o JavaScript.
+              </p>
+            </td>
+
+            <td class="col-20">
+              
+            </td>
+          </tr>
+
+          <tr>
+            <td class="col-80">
+              <h3 id="1.2">1.2</h3>
+              <p>
+                <b>style (Estilos en línea):</b><br>
+                Permite aplicar estilos directamente al elemento usando propiedades CSS.<br>
+                Regla: Úsalo solo para pruebas rápidas.<br>
+                Uso: style="color: red;".
+              </p>
+            </td>
+
+            <td class="col-20">
+             
+            </td>
+          </tr>
+
+          <tr>
+            <td class="col-80">
+              <h3 id="1.3">1.3</h3>
+              <p>
+                <b>title (Información adicional):</b><br>
+                Agrega un texto que aparece al pasar el cursor sobre el elemento.<br>
+                Regla: Solo muestra texto simple.<br>
+                Uso: title="Información".
+              </p>
+            </td>
+
+            <td class="col-20">
+              
+            </td>
+          </tr>
+
+
+          <tr>
+            <td class="col-80">
+              <h2 id="atributos_form">Atributos del formulario (form)</h2>
+
+              <h3 id="2.1">2.1</h3>
+              <p>
+                <b>action (Destino del formulario):</b><br>
+                Indica la URL del servidor donde se enviarán los datos.<br>
+                Regla: Debe ser una ruta válida.<br>
+                Uso: &lt;form action="procesar.php"&gt;.
+              </p>
+            </td>
+
+            <td class="col-20">
+             
+            </td>
+          </tr>
+
+          <tr>
+            <td class="col-80">
+              <h3 id="2.2">2.2</h3>
+              <p>
+                <b>method (Método de envío):</b><br>
+                Define cómo se enviarán los datos.<br><br>
+                <b>Métodos:</b><br>
+                • GET → datos visibles en la URL.<br>
+                • POST → datos ocultos.<br><br>
+                Regla: Para datos sensibles usar POST.
+              </p>
+            </td>
+
+            <td class="col-20">
+             
+            </td>
+          </tr>
+
+
+          <tr>
+            <td class="col-80">
+              <h2 id="3">Atributos de input</h2>
+            </td>
+
+            <td class="col-20">
+              >
+            </td>
+          </tr>
+
+        </table>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    footer
+  </footer>
+
+</body>
+</html>
